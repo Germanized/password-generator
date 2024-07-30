@@ -1,6 +1,6 @@
 # GermGen
 
-[![Logo](https://i.ibb.co/928s7Xk/GermGen.gif)]
+![Logo](https://i.ibb.co/928s7Xk/GermGen.gif)
 
 ## Overview
 

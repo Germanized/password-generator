@@ -4,8 +4,9 @@
 
 ## Overview
 
-This application is a secure and customizable password generator. It allows users to generate passwords with various configurations and ensures their security with AES 256 bit encryption and obfuscated the hell out of it
-it's better than dn spys one
+This application is a secure and customizable password generator. It allows users to generate passwords with various configurations and ensures their security with AES 256 bit encryption and obfuscates the hell out of it
+it's better than dn spys one also rarely i cant release src because this has some methods I first don't want to get leaked big mistake (which happened before) second I don't want a grabber to implement deobfuscate passwords for this its it own encryption lang
+if you still dont trust that is completely fine here is my triage for it https://tria.ge/submit/240730-e1xkqaydra and also you can scan it with https://github.com/TaxMachine/Grabbers-Deobfuscator it wont be able to de obfuscate it but it will check it and see its legit thanks to him
 
 ## Key Features
 

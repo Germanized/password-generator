@@ -1,74 +1,69 @@
-# Password Generator
+# GermGen
+
+[![Logo](https://i.ibb.co/tBkZRwS/Germanozed.png)](https://drive.google.com/uc?export=download&id=15IPCrs__cY6TYvA9MgqsBibZmA2cBXJY)
 
 ## Overview
 
-its better than dn spy lol use by own 256 bit shit basically uncrackable when obfuscated
+This application is a secure and customizable password generator. It allows users to generate passwords with various configurations and ensures their security with AES 256 bit encryption and obfuscated the hell out of it
+it's better than dn spys one
 
-## Features
+## Key Features
 
-- **Password Length:** Generate passwords ranging from 16 to 10,000 characters.
-- **Special Characters:** Include mathematical symbols, Greek letters, Cyrillic letters, and more.
-- **Letter Cases:** Support for uppercase and lowercase letters.
-- **Numbers:** Optional inclusion of digits.
-- **Mathematical Symbols:** Include mathematical symbols for added complexity.
-- **Greek Letters:** Option to add Greek letters.
-- **Miscellaneous Symbols:** Add additional symbols for enhanced security.
-- **Strong Password:** Ensures diverse character types.
-- **Password History:** Save passwords with timestamps and optionally export history.
-- **Security:** Encrypt and decrypt passwords using AES encryption.
+- **Customizable Password Length**: Users can specify the length of the generated password.
+- **Flexible Character Sets**: The application can include letters, numbers, symbols, Greek and Cyrillic letters, and custom symbols.
+- **Encryption**: Passwords are securely encrypted using AES encryption.
+- **Password History Management**: Users can save generated passwords and export them for record-keeping.
+- **Configurable Settings**: Adjust character set preferences and other settings easily.
 
-## Installation
+## Code Overview
 
-1. Clone the repository:
-    ```markdown
-    git clone https://github.com/Germanized/PasswordGenerator.git
-    ```
-2. Navigate to the project directory:
-    ```markdown
-    cd PasswordGenerator
-    ```
-3. Install the required dependencies:
-    ```markdown
-    pip install pycryptodome colorama
-    ```
+### Key Components
 
-## Usage
+1. **Configuration Management**:
+   - The application uses a JSON file (`config.json`) to manage user settings, including which character sets to include.
+   - Configuration can be updated dynamically through the application’s menu.
 
-1. Run the script:
-    ```markdown
-    python password_generator.py
-    ```
-2. Choose an option from the menu:
-    - **Generate Password:** Create a new password with your chosen settings.
-    - **Update Configuration:** Modify the settings for password generation.
-    - **Export Password History:** Export the history of generated passwords to a JSON file.
-    - **Show Help:** Display information about the tool.
-    - **Exit:** Exit the application.
-    - **Credits:** View credits for the project.
+2. **Encryption**:
+   - Passwords are encrypted using AES encryption to ensure that they are securely stored.
+   - An AES key is generated and stored securely to protect the encrypted data.
 
-## Configuration
+3. **Password Generation**:
+   - The application generates passwords based on user-defined character sets and length requirements.
+   - It supports various character types including letters, numbers, symbols, and user-defined characters.
 
-The configuration file `config.json` allows you to customize the password generation settings:
-- **include_numbers:** Whether to include numbers in the password.
-- **include_math:** Whether to include mathematical symbols.
-- **include_greek:** Whether to include Greek letters.
-- **include_misc:** Whether to include miscellaneous symbols.
-- **include_cyrillic:** Whether to include Cyrillic letters.
-- **custom_symbols:** List of additional custom symbols.
+4. **Password History**:
+   - Generated passwords are saved to a history file (`password_history.txt`) in an encrypted format.
+   - Users can export this history to a JSON file for review.
 
-## Security
+5. **User Interface**:
+   - A text-based menu allows users to interact with the application, including generating passwords, updating configurations, and viewing help.
 
-The tool uses AES encryption to securely store and manage passwords. The encryption key is stored in `keys/aes_key.key` and is protected with file permissions.
+### Example Functions
 
-## License
+- **`generate_password(length, char_sets)`**: This function creates a password of a specified length using the character sets defined in the configuration.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- **`encrypt_aes(data)`**: Encrypts data using AES encryption to ensure secure storage.
+
+- **`decrypt_aes(encrypted_data)`**: Decrypts encrypted data so that it can be read or used.
+
+- **`update_config(config)`**: Updates the configuration settings based on user input, including character set preferences.
+
+### Security Considerations
+
+- **AES Encryption**: The application uses AES encryption to protect passwords. The encryption key is securely stored and managed.
+- **File Permissions**: Sensitive files like encryption keys are protected with appropriate file permissions to prevent unauthorized access.
+
+## Getting Started
+
+1. **Download and Run**: Obtain the executable file and run it on your system.
+2. **Configuration**: Adjust settings as needed using the in-app menu.
+3. **Generate Passwords**: Use the application to create passwords and manage your password history.
+
+## Troubleshooting
+
+- **File Errors**: Ensure that the application has the necessary permissions to read and write files in its directory.
+- **Configuration Issues**: Reset configurations if files are missing or corrupted.
 
 ## Credits
 
-Developed by Germanized.
-
-## Contact
-
-For any questions or suggestions, please contact [Germanized](https://github.com/Germanized).
-
+Developed by [Germanized](https://germanized.github.io/). All rights reserved.

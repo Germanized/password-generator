@@ -1,6 +1,6 @@
 # GermGen
 
-[![Logo](https://i.ibb.co/tBkZRwS/Germanozed.png)](https://drive.google.com/uc?export=download&id=15IPCrs__cY6TYvA9MgqsBibZmA2cBXJY)
+[![Logo](https://i.ibb.co/928s7Xk/GermGen.gif)]
 
 ## Overview
 

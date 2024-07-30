@@ -1,4 +1,4 @@
-# GermGen
+# GermGen fine if this gets 20 stars i will release src
 
 ![Logo](https://i.ibb.co/928s7Xk/GermGen.gif)
 
